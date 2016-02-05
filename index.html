@@ -1,0 +1,1405 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Der Mensch in artgerechter Haltung</title>
+		<meta name="description" content="Der Mensch in artgerechter Haltung - Präsentation Bonn Agile 7. Mai 2013 Christoph Baudson">
+		<meta name="author" content="Christoph Baudson">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+<style type="text/css">
+h1.poker {
+	line-height:1em;
+	margin:0 auto 0.5em;
+	max-width:250px;
+	border-radius:20px;
+	background-color:#ccc
+}
+h1.poker.red {
+	color:red;
+}
+h1.poker.black {
+	color:black;
+}
+
+div.speech-bubble {
+	border-radius: 1em;
+	text-align: center;
+	padding: 0.5em;
+	background-color: white;
+	color: black;
+	margin: 1em auto 0;
+	position:relative;
+	max-width: 500px;
+}
+div.speech-bubble.left {
+	border-bottom-left-radius: 0;
+}
+div.speech-bubble.right {
+	border-bottom-right-radius: 0;
+}
+div.speech-bubble:after {
+	height: 0;
+	width: 0;
+	margin: 0;
+	padding: 0;
+	border:60px solid transparent;
+	border-bottom-width: 0;
+	border-top-width: 20px;
+	content: "";
+	bottom: 0;
+	position: absolute;
+}
+div.speech-bubble.left:after {
+	border-right-color: white;
+	left: -120px;
+}
+div.speech-bubble.right:after {
+	border-left-color: white;
+	right: -120px;
+}
+div.speech-bubble.person.a:before {
+	background-image:url(img/person_a.png);
+}
+div.speech-bubble.person.b:before {
+	background-image:url(img/person_b.png);
+}
+div.speech-bubble.person.c:before {
+	background-image:url(img/person_c.png);
+}
+div.speech-bubble.person:before {
+	background-repeat: no-repeat;
+	height: 114px;
+	width: 107px;
+	margin: 0;
+	padding: 0;
+	content: "";
+	bottom: -60px;
+	position: absolute;
+}
+div.speech-bubble.person.left:before {
+	left: -220px;
+}
+div.speech-bubble.person.right:before {
+	right: -220px;
+}
+
+.checked:after {
+	content:"✓";
+	color:green;
+	font-weight:bold;
+}
+
+
+		table.diagram {
+			border-spacing: 0;
+			width: 100%;
+		}
+		table.diagram td {
+			padding: 0;
+		}
+		table.diagram td.axis-up {
+			border-left: 2px solid #aaa;
+			width: 10px;
+		}
+		table.diagram td.axis-right {
+			border-bottom: 2px solid #aaa;
+		}
+		table.diagram td.arrow-up {
+			vertical-align: bottom;
+		}
+		table.diagram td.arrow-up > div {
+			height: 0;
+			width: 0;
+			border:30px solid transparent;
+			border-left-width: 15px;
+			border-right-width: 15px;
+			border-bottom-color: #aaa;
+			position: relative;
+			left: -14px;
+		}
+		table.diagram td.arrow-right {
+			width: 30px;
+		}
+		table.diagram td.arrow-right > div {
+			width: 0;
+			height: 0;
+			border:30px solid transparent;
+			border-top-width: 15px;
+			border-bottom-width: 15px;
+			border-left-color: #aaa;
+			position: relative;
+			bottom: -14px;
+		}
+		table.diagram td.content {
+			height: 150px;
+			border-spacing: 2px;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 2em;
+			font-weight: bold;
+			background-repeat: no-repeat;
+		}
+		table.diagram td.content.wahr {
+			background-color: #1b91ff;
+		}
+		table.diagram td.content.a {
+			background-image: url(img/person_a.png);
+		}
+		table.diagram td.content.richtig {
+			background-color: #17aa2e;
+		}
+		table.diagram td.content.b {
+			background-image: url(img/person_b.png);
+		}
+		table.diagram td.content.natuerlich {
+			background-color: #ff2c2d;
+		}
+		table.diagram td.content.c {
+			background-image: url(img/person_c.png);
+		}
+		table.diagram td.label-x {
+			text-align:right;
+		}
+
+</style>
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<section>
+	<h1>Der Mensch in artgerechter Haltung</h1>
+	<p>FrOSCon, August 2013</p>
+	<p>Christoph Baudson</p>
+	<p><a href="https://twitter.com/sustainablepace" target="_blank">@sustainablepace</a></p>
+	<p><a href="http://artgerecht.sustainablepace.net" target="_blank">artgerecht.sustainablepace.net</a></p> 
+	<aside class="notes">
+	Vorstellen<br>
+	Moderator BonnAgile, Suchen Vorträge und Locations<br>
+	Twitter<br>
+	Softwareentwickler, JavaScript PHP, SolarWorld<br>
+	</aside>
+</section>
+<section>
+	<img src="img/a/topothesie.jpg" height="100%">
+	<aside class="notes">
+	Wie komme ich zum Thema?<br>
+	Untertitel des Buches ist Vortragstitel<br>
+	Wer ist Gunter Dueck<br>
+	Letzter Teil der "Lebenssinntrilogie"<br>
+	kann man gewinnen<br>
+	</aside>
+</section>
+<section>
+	<img src="img/a/pigs.jpg" width="100%">
+	<aside class="notes">
+		Im Bezug auf Tiere<br>
+		Nicht-artgerechte Haltung
+	</aside>
+</section>
+<section>
+	<img src="img/a/chicken.jpg" width="100%">
+	<aside class="notes">
+		Weniger im Bezug auf Menschen...oder?
+	</aside>
+</section>
+<section>
+	<img src="img/a/cartoon.jpg" width="100%">
+	<aside class="notes">
+		FRAGEN: Wer kennt diese Cartoons?<br>
+		Erklären: Pig und Chicken Rolle im Scrum<br>
+		Scrum: artgerechte Haltung für "Schweine"?<br>
+		Fokus liegt nicht auf Organisationsebene (MAN HÄLT KEINE MENSCHEN!)<br>
+		 sondern auf zwischenmenschlicher Ebene: BEISPIEL
+	</aside>
+</section>
+<section>
+  Drei Softwareentwickler im Büro. A und B arbeiten, C kommt zu spät.
+	<div class="fragment fade-in speech-bubble left person b">C! Du hast den Build kaputtgemacht!</div>
+	<div class="fragment fade-in speech-bubble right person c">Nichts Wildes...erst mal Kaffee.</div>
+	<div class="fragment fade-in speech-bubble left person a">Könnt ihr bitte leiser sein...</div>
+	<aside class="notes">
+		Richtigen Tonfall finden. Mahnend. Entspannt. Resignierend.
+	</aside>
+</section>
+<section>
+	<div style="font-style:italic">C kommt mit Kaffee zurück.</div>
+	<div class="fragment fade-in speech-bubble right person c">Ich repariers jetzt! <span style="font-style:italic" class="fragment fade-in">(denkt: Du Tyrann)</span></div>
+	<div class="fragment fade-in speech-bubble left person b">Schon passiert! <span style="font-style:italic" class="fragment fade-in">(denkt: Du Faulpelz)</span></div>
+	<div class="fragment fade-in speech-bubble left person a"> <span style="font-style:italic" class="fragment fade-in">(denkt: Ihr Störenfriede)</span></div>
+	<aside class="notes">
+		WER sind die Personen?<br>
+		WIE wird man ihren Arten gerecht?
+	</aside>
+</section>
+<section>
+	<h1>Der Mensch in artgerechter Haltung</h1>
+	<ol>
+		<li class="fragment fade-in"><span class="fragment highlight-red" data-fragment-index="4">Es gibt verschiedene Menschenarten</span></li>
+		<li class="fragment fade-in">Diversität macht Sinn</li>
+		<li class="fragment fade-in">Wie werde ich der Art eines Menschen gerecht?</li>
+	</ol>
+	<aside class="notes">
+    1. Artgerecht => es gibt mehrere Arten<br>
+    2. Es hat einen Sinn, warum es genau diese Arten gibt<br>
+    3. Artgerecht: Nicht:wie hält man Menschen!!<br> 
+    Eher: Wie kann ICH in der Interaktion mit Menschen dessen Art gerecht werden
+	</aside>
+</section>
+<section>
+	<h1>Disclaimer</h1>
+  <p>All models are wrong *</p>
+  <p class="fragment fade-in">* but some are useful</p>
+	<aside class="notes">
+		Es gibt viele Modelle um Persönlichkeit zu modellieren (MBTI, Belbin, etc.)<br>
+    Alle Modelle haben Grenzen! Wir stecken Leute in Schubladen, holen sie später wieder raus.<br>
+    Ich argumentiere auch aus einer Ecke heraus<br>
+    Reduzierung der Komplexität, um eine Basis für Dialog zu haben<br>
+    Spielerischer Umgang mit dem Thema, bitte nicht alles auf die Goldwaage legen
+	</aside>
+</section>
+<section>
+	<img src="img/b/jakarta.jpg" width="100%">
+	<p class="fragment fade-in">"The Big Durian"</p>
+	<aside class="notes">
+Die besten Ideen hat man im Urlaub<br>
+3 Wochen im Verkehr von Jakarta<br>
+Bevölkerungsdichte 6x Köln<br/>
+20 Millionen Pendler 10+ Mio Fahrzeuge<br/>
+In Anlehnung an "The Big Apple" nennt man Jakarta "The big durian"<br/>
+	</aside>
+</section>
+<section>
+	<img src="img/b/durian.jpg" width="100%">
+	<aside class="notes">
+Durian = Stinkfrucht<br />
+Durian beschreiben, sollte man mal probiert haben<br>
+In Jakarta stinkt es.
+	</aside>
+</section>
+<section>
+	<img src="img/b/nodurian2.jpg" width="100%">
+	<aside class="notes">
+Stinkt wirklich.
+	</aside>
+</section>
+<section>
+	<img src="img/b/traffic1.jpg" width="100%">
+	<aside class="notes">
+Der arme Krankenwagen.
+	</aside>
+</section>
+<section>
+	<img src="img/b/traffic2.jpg" width="100%">
+	<aside class="notes">
+Dynamische Fahrspuren.
+</aside>
+</section>
+<section>
+	<img src="img/b/traffic3.jpg" width="100%">
+	<aside class="notes">
+Regeln schlagen fehl: <br />
+- Markierung Mitte<br />
+- Bus Expressspur<br />
+=> Interactions and individuals over processes and tools!<br>
+Anderes Hupen als in D<br>
+</aside>
+</section>
+<section>
+	<img src="img/b/traffic4.jpg" width="100%">
+	<aside class="notes">
+Am Anfang genervt, dann fasziniert. Beobachten<br>
+Bus wird langsamer, bleibt stehen. 3 Reaktionen (vorbeidrängeln, folgen, warten).
+	</aside>
+</section>
+<section>
+	<h1>Reaktion auf Konflikte</h1>
+	<p>nach Karen Horney</p>
+	<ul>
+		<li class="fragment">angreifen <span class="fragment fade-in">(drängeln)</span></li>
+		<li class="fragment">anpassen <span class="fragment fade-in">(folgen)</span></li>
+		<li class="fragment">zurückziehen <span class="fragment fade-in">(warten)</span></li>
+	</ul>
+	<aside class="notes">
+	Karen Horney dt. Psychologin erste Hälfte 20. Jhdt.
+	</aside>
+</section>
+<section>
+	<h1>Stresskurve</h1>
+	<img src="img/b/stresskurve1.png" width="100%">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/b/3kurven_a.png" width="100%">
+	<p class="fragment fade-in">Jede Art hat eine eigene Stresskurve</p>
+	<p class="fragment fade-in">Jede Art strebt zur Mitte ihrer Kurve</p>
+	<aside class="notes">
+	Erklären der drei Verhaltensweisen.<br>
+	Jede Art hat eine eigene Stresskurve<br>
+	Jede Art strebt zur Mitte ihrer Kurve
+	</aside>
+</section>
+<section>
+  Drei Softwareentwickler im Büro. A und B arbeiten, C kommt zu spät.
+	<div class="fragment fade-in speech-bubble left person b">C! Du hast den Build kaputtgemacht!</div>
+	<div class="fragment fade-in speech-bubble right person c">Nichts Wildes...erst mal Kaffee.</div>
+	<div class="fragment fade-in speech-bubble left person a">Könnt ihr bitte leiser sein...</div>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/b/3kurven_b.png" width="100%">
+	<aside class="notes">
+		<p>Jede Art hat eine eigene Stresskurve</p>
+		<p>Jede Art strebt zur Mitte ihrer Kurve (Wahr: Scrum: Lasst uns doch mal zwei Wochen in Ruhe!)</p>
+		<p>Kommunikation als Durchsetzung von Interessen</p>
+	</aside>
+</section>
+<section>
+	<img src="img/b/omnisophie.jpg" height="700px">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/b/stresskurve2.png" width="100%">
+	<aside class="notes">
+	Erklären: Intuition, Verstand, Instinkt<br>
+	Attribute vorlesen
+	</aside>
+</section>
+<section>
+	<img src="img/b/3kurven_c.png" width="100%">
+	<aside class="notes">
+		Warum ist A wahr?<br>
+		Warum ist B richtig?<br>
+		Warum ist C natürlich?
+	</aside>
+</section>
+<section>
+	<h2>Jede Philosophie hat ein "höchstes Gut"</h2>
+	<ul>
+		<li class="fragment fade-in">Aristipp <span class="fragment fade-in"> &rarr; Lust (natürlich, "ich")</span></li>
+		<li class="fragment fade-in">Aristoteles <span class="fragment fade-in"> &rarr; Tugendhaftigkeit (richtig, "man")</span></li>
+		<li class="fragment fade-in">Platon <span class="fragment fade-in"> &rarr; Welt der Ideen (wahr, "im Prinzip")</span></li>
+	</ul>
+	<aside class="notes">
+Jede Philosophie hat ein "höchstes Gut" = eigene Stresskurve<br>
+Ich will Kaffee!<br>
+Man repariert was man kaputt macht!<br>
+Im Prinzip stimmt das, aber man muss es ganzheitlich betrachten.<br>
+Es kann nicht EIN höchstes Gut geben (sonst hätte man sich schon geeinigt)<br>
+Vereinigung aller Philosophien = Omnisophie , Metaphilosophie
+	</aside>
+</section>
+<section>
+	<img src="img/b/larch.jpg" height="100%">
+	<aside class="notes">
+Baum ist Idee, Baum klettern, aus Baum Brennholz machen
+	</aside>
+</section>
+<section>
+	<h1>Omnisophie und Popkultur</h1>
+	<aside class="notes">
+Schwer, reale Personen einzuordnen (keine Daten)<br>
+Fiktive Charaktere sind überzeichnet<br>
+Charaktere im Extrem kennenlernen, um Grenze schärfer zu erkennen<br>
+In Realität nicht so klar abzugrenzen
+	</aside>
+</section>
+<section>
+	<img src="img/b/bienemaja.jpg" height="300px" style="float:left">
+	<img src="img/b/schlümpfe.jpg" height="300px" style="float:left">
+	<img src="img/b/wickie.jpg" height="300px" style="float:left">
+	<ul style="clear:left">
+		<li>Biene Maja = natürlich</li>
+		<li>Schlümpfe = richtig</li>
+		<li>Wickie = wahr</li>
+	</ul>
+	<aside class="notes">
+	Papa was machst Du da? Muss meiner Tochter (4) Omnisophie erklären...<br>
+	"Manche Menschen wie Wickie, manche wie Biene Maja, manche wie Schlümpfe." "Sind die dann auch blau?" "...Kommt schon vor"<br>
+	WARUM Biene Maja natürlich?<br>
+	WARUM Schlümpfe richtig?<br>
+	WARUM Wickie wahr?
+	</aside>
+</section>
+<section>
+	<img src="img/b/movies.starwars.jpg" height="400px">
+	<img src="img/b/movies.2001.jpg" height="400px">
+	<table class="fragment fade-in" style="margin:0 auto">
+		<tr>
+			<th style="width:250px"></th>
+			<th style="width:200px">Star Wars</th>
+			<th style="width:200px">2001</th>
+			<th style="width:250px"></th>
+		</tr>
+		<tr>
+			<th style="width:250px"><a href="http://www.boxofficemojo.com/alltime/adjusted.htm" target="_blank">Box office</a></th>
+			<td style="width:200px">#2</td>
+			<td style="width:200px">#131</td>
+			<td style="width:250px">natürlich</td>
+		</tr>
+		<tr class="fragment fade-in">
+			<th style="width:250px"><a href="http://www.imdb.com/chart/top" target="_blank">IMDb</a></th>
+			<td style="width:200px">#16</td>
+			<td style="width:200px">#93</td>
+			<td style="width:250px">richtig</td>
+		</tr>
+		<tr class="fragment fade-in">
+			<th style="width:250px"><a href="http://www.theyshootpictures.com/gf1000_all1000films_table.php" target="_blank">They Shoot Pictures</a></th>
+			<td style="width:200px">#126</td>
+			<td style="width:200px">#3</td>
+			<td style="width:250px">wahr</td>
+		</tr>
+	</table>
+	<aside class="notes">
+Einerseits FILMINHALTE, andererseits PUBLIKUM<br>
+Ziehen "natürliche" Filme "natürliches" Publikum an?<br>
+INHALT: Star Wars: Rebellion, Krieg, Waffen, Helden (der einzig wahre ist c3po, ein roboter)<br>
+INHALT: 2001: kaum Charaktere oder Dialog, eher Ideen und Bilder<br>
+PUBLIKUM<br>
+natürliche: gehen ins kino um spass zu haben<br />
+richtige: bewerten, vergleichen, ordnen<br />
+wahre: sterne sind falsch, evtl kanon<br />
+	</aside>
+</section>
+<section>
+	<h1>Omnisophie und Agile</h1>
+	<ul>
+		<li class="fragment fade-in">XP, Software Craftsmenship &rarr; natürlich</li>
+		<li class="fragment fade-in">Scrum-zertifiziert &rarr; richtig</li>
+		<li class="fragment fade-in">Agiles Manifest &rarr; wahr</li>
+	</ul>
+	<aside class="notes">
+		XP &rarr; Trainieren bei Meister, "extrem", Handwerk, Fokus auf Handeln<br />
+    Extreme Programmer sind die Ultras der Softwareentwickler<br>
+		Wie macht "man" agile? Chef sagt ich bin agile (gemein)<br />
+		Werte und Prinzipien, Warum (nicht wie), Gedankenwelt<br>
+		Vielleicht Diskussion danach...
+	</aside>
+</section>
+<section>
+  <h1>Über Subkulturen und Teilkulturen</h1>
+	<ul>
+		<li class="fragment fade-in">Natürliche <span class="fragment fade-in">~30%</span></li>
+		<li class="fragment fade-in">Richtige <span class="fragment fade-in">~55%</span></li>
+		<li class="fragment fade-in">Wahre <span class="fragment fade-in">~15%</span></li>
+	</ul>
+	<aside class="notes">
+Wichtig um ein Gefühl für die Beziehung zwischen den Arten zu bekommen<br>
+Zu den Zahlen später mehr.<br>
+	</aside>
+</section>
+<section>
+	<img src="img/b/subkultur.ultras.jpg" width="100%">
+	<aside class="notes">
+		Ultras: "extreme" Fussballfans. Selbstverständnis: Die besseren Fans<br>
+		Hohes Energielevel, daueranfeuern, Bengalische Feuer, <br>
+		"Gegen den modernen Fussball", krawallbereit, aber keine Hooligans<br>
+		Fussball war mal Natürlich, jetzt ist er richtig (Geld)<br>
+		<b>Natürliche fühlen sich von Richtigen eingeengt</b><br>
+		<b>Richtige fühlen sich von Natürlichen bedroht</b><br>
+		Sicherheitsmassnahmen im Stadion, Polizeiaufgebot, Sitzplätze...
+	</aside>
+</section>
+<section>
+	<img src="img/b/teilkultur.11freunde.jpg" height="500px">
+	<aside class="notes">
+		Magazin für Fußball-Kultur<br>
+		Geschichten rund um den Fußball und seine Fans<br>
+		"intellektuell"<br>
+		"anders" als kicker, "richtiges" Sportmagazin mit Tabellen und Ergebissen und Bewertungen<br>
+		Nicht gegen die Richtigen, existiert als Parallelwelt<br>
+		Von den Richtigen nicht wahrgenommen, oder als "seltsam" angesehen (wie BonnAgile?)
+	</aside>
+</section>
+<section>
+	<h1>Was bin ich?</h1>
+	<img class="fragment fade-in" src="img/b/enneapic.jpg">
+	<aside class="notes">
+	Wie kann man herausfidnen ob man nat, ri oder wahr ist<br>
+    Es gibt keinen Test<br>
+    Dueck sammelt Testergebnisse von Enneagramm, MBTI, Autismus, Hypersensitivität
+    Enneagramm, Esoterik, pseudowissenschaftlich<br>
+    All models are wrong...<br>
+	</aside>
+</section>
+<section>
+	<table class="diagram">
+		<tbody>
+		<tr>
+			<td class="arrow-up">
+				<div></div>
+			</td>
+			<td colspan="2" >Lebensenergie</td>
+		</tr>
+		<tr>
+			<td class="axis-up" rowspan="3"></td>
+			<td class="fragment fade-in content natuerlich" data-fragment-index="3">
+				natürlich
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="fragment fade-in content richtig" data-fragment-index="2">
+				richtig
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="fragment fade-in content wahr" data-fragment-index="1">
+				wahr
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="axis-up axis-right"></td>
+			<td class="axis-right"></td>
+			<td class="arrow-right"><div style="border-color:transparent"></div></td>
+		</tr>
+		<tr>
+			<td style="color:transparent" colspan="2" class="label-x">Liebesenergie</td>
+			<td></td>
+		</tr>
+		</tbody>
+	</table>
+	<aside class="notes">
+		Alternative Darstellung zu Stresskurve (Topothesie)<br>
+	</aside>
+</section>
+<section>
+	<div class="speech-bubble left person b">C! Du hast den Build kaputtgemacht! <span style="font-weight:bold" class="fragment fade-in">("Richtig")</span></div>
+	<div class="speech-bubble right person c">Nichts Wildes...erst mal Kaffee. <span style="font-weight:bold" class="fragment fade-in">("Natürlich")</span></div>
+	<div class="speech-bubble left person a">Könnt ihr bitte leiser sein?! <span style="font-weight:bold" class="fragment fade-in">("Wahr")</span></div>
+	<aside class="notes">
+		In Erinnerung rufen. Welche Enneagrammtypen sind es?
+	</aside>
+</section>
+<section>
+	<h1>9 Typen des Enneagramms</h1>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+				<th>Selbstverständnis</th>
+			</tr>
+		</thead>	
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Perfektionisten</td>
+				<td>Recht haben</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Geber</td>
+				<td>helfen</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Macher</td>
+				<td>der Beste sein</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Romantiker</td>
+				<td>anders sein</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Denker</td>
+				<td>durchblicken</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Skeptische</td>
+				<td>Pflicht erfüllen</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Genießer</td>
+				<td>glücklich sein</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Anführer</td>
+				<td>stark sein</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Friedliebende</td>
+				<td>zufrieden sein</td>
+			</tr>
+		</tbody>
+	</table>
+	<aside class="notes">
+		Überfliegen, nur die drei Typen hervorheben (ggf. zurück)
+	</aside>
+</section>
+<section data-transition="none">
+	<table class="diagram">
+		<tbody>
+		<tr>
+			<td class="arrow-up">
+				<div></div>
+			</td>
+			<td colspan="4" >Lebensenergie</td>
+		</tr>
+		<tr>
+			<td class="axis-up" rowspan="3"></td>
+			<td class="fragment fade-in content natuerlich" data-fragment-index="7">
+				3
+			</td>
+			<td class="fragment fade-in content natuerlich" data-fragment-index="8">
+				8
+			</td>
+			<td class="fragment fade-in content natuerlich c" data-fragment-index="9">
+				7
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="fragment fade-in content richtig b" data-fragment-index="4">
+				1
+			</td>
+			<td class="fragment fade-in content richtig" data-fragment-index="5">
+				6
+			</td>
+			<td class="fragment fade-in content richtig" data-fragment-index="6">
+				2
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="fragment fade-in content wahr" data-fragment-index="1">
+				5
+			</td>
+			<td class="fragment fade-in content wahr a" data-fragment-index="2">
+				9
+			</td>
+			<td class="fragment fade-in content wahr" data-fragment-index="3">
+				4
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="axis-up axis-right"></td>
+			<td colspan="3" class="axis-right"></td>
+			<td class="arrow-right"><div></div></td>
+		</tr>
+		<tr>
+			<td colspan="4" class="label-x">Liebesenergie</td>
+			<td></td>
+		</tr>
+		</tbody>
+	</table>
+	<aside class="notes">
+	X-ACHSE NUN BESCHRIFTET!!<br>
+	Zu jedem Typen einen Satz (weil nur Zahlen da sind)<br>
+	Wenn man den Zusammenhang kennt, kann man einen Enneagrammtest machen.
+	</aside>
+</section>
+<section>
+	<h2>http://is.gd/enneagramm</h2>
+	<img src="img/b/enneagramm.link.png" width="400px">
+	<aside class="notes">
+Das sind ganz viele Seiten, am Schluss Prozentsatz für jeden Typ.
+	</aside>
+</section>
+<section>
+	<h1>Der Mensch in artgerechter Haltung</h1>
+	<ol>
+		<li>Es gibt verschiedene Menschenarten <span class="checked" /></li>
+		<li><span class="fragment highlight-red" data-fragment-index="4">Diversität macht Sinn</span></li>
+		<li>Wie werde ich der Art eines Menschen gerecht?</li>
+	</ol>
+	<aside class="notes">
+	Es gibt verschiedene Menschenarten, aber warum? Diversität => Evolution
+	</aside>
+</section>
+<section>
+	<img src="img/c/evolution.jpg" width="80%">
+	<aside class="notes">
+Evolution<br>
+Jeder Schritt entspricht einer Art<br>
+Wenn man für Evolution alle braucht...<br>
+1. Reproduktion (Startup, Aktion, natürlich)<br>
+2. Mutation (Jedes Startup hat andere Ideen, wahrer Einfluss)<br>
+3. Selektion (Welches Startup überlebt? Was braucht man wirklich? Ordnung, richtig)<br>
+	</aside>
+</section>
+<section>
+<p>"The Playing Card Tool for Driving High-Performance Teamwork and Innovation"</p>
+	<img src="img/c/poker_book.jpg" height="500px">
+	<p>(Online-Variante: <a href="http://is.gd/ppoker">http://is.gd/ppoker</a>)</p>
+
+	<aside class="notes">
+Andere, simplere Typisierung<br>
+Spielerisch lernen, warum Diversität Sinn macht.<br>
+
+	</aside>
+</section>
+<!--
+<section>
+	<h1>Regeln</h1>
+  <ul>
+    <li>Fünf Eigenschaften wählen die einen am besten beschreiben</li>
+    <li>Mindestens eine Karte mit Wert 2-4</li>
+	</ul>
+<br><br>
+  	<p>Nicht so ernst nehmen! "You can't lose - only if you don't have a personality"</p>
+	<aside class="notes">
+Blatt zeigen, noch nicht aushändigen!<br>
+Normal ein Kartenspiel, hier als Fragebogen, damit alle spielen können<br>
+Wer Kollegen dabei hat, kann gerne zusammenarbeiten<br>
+10 MINUTEN! Fragen jederzeit möglich.
+	</aside>
+</section>
+<section>
+	<img src="img/c/poker_styles1.png" width="100%">
+	<aside class="notes">
+Jede Karte fällt in eine der 4 Kategorien<br>
+1. -> beibehalten<br>
+4. -> ignorieren<br>
+weniger 2., mehr 3.<br>
+	</aside>
+</section>
+<section>
+	<img src="img/c/poker_styles2.png" width="100%">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h2>Let's play!</h2>
+  <ul>
+    <li>Fünf Eigenschaften wählen die einen am besten beschreiben</li>
+    <li>Preferred > Desired > Adapted > Opposite</li>
+    <li>Mindestens eine Karte mit Wert 2-4</li>
+  </ul>
+<br><br>
+	<p>(Online-Variante: <a href="http://is.gd/ppoker">http://is.gd/ppoker</a>)</p>
+	<aside class="notes">
+5 Freiwillige<br/>
+Jeder 5 Karten<br/>
+Sortieren nach Präferenz<br/>
+Nicht präferierte Karten tauschen mit anderen ( 4 min )<br/>
+Falls immer noch nicht präferierte da sind, aus übrigen auswählen (4 min )<br/>
+	</aside>
+</section>
+<section>
+	<h1>Auswertung</h1>
+	<ul>
+		<li class="fragment highlight-red">"Strong suit" (Hauptfarbe)</li>
+		<li>"Opposite suit" (Seltenste Farbe)</li>
+		<li>"Unproduktive" Eigenschaften (2-4)</li>
+		<li>Rechte / linke Gehirnhälfte (rot / schwarz)</li>
+		<li>Introvertiert / Extravertiert (5-9 / 10-As)</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1 class="poker black">♣</h1>
+	<ul>
+		<li>Planen</li>
+		<li>Struktur</li>
+		<li>Durchführen</li>
+		<li>Ergebnisse</li>
+		<li style="font-weight:bold">"Wie"</li>
+	</ul>
+	<aside class="notes">
+High -> CEO<br>
+Low -> Projekt manager, QA
+	</aside>
+</section>
+<section>
+	<h1 class="poker black">♠</h1>
+	<ul>
+		<li>analytisch</li>
+		<li>daten-orientiert</li>
+		<li>Fakten</li>
+		<li>Tiefe</li>
+		<li style="font-weight:bold">"Warum"</li>
+	</ul>
+	<aside class="notes">
+-> Ingenieure, Philosophen, Wissenschaftler
+	</aside>
+</section>
+<section>
+	<h1  class="poker red">♥</h1>
+	<ul>
+		<li>Menschen / Beziehungen</li>
+		<li>Empathisch</li>
+		<li>Kümmern</li>
+		<li>netzwerken</li>
+		<li style="font-weight:bold">"Wer"</li>
+	</ul>
+	<aside class="notes">
+-> Customer Service, Human Resources, Diplomaten, Lehrer
+	</aside>
+</section>
+<section>
+	<h1 class="poker red">♦</h1>
+	<ul>
+		<li>kreativ / Ideen</li>
+		<li>Erfahrungen</li>
+		<li>künsterlisch</li>
+		<li>Spaß / Abenteuer</li>
+		<li style="font-weight:bold">"Was"</li>
+	</ul>
+	<aside class="notes">
+-> Design, Unternehmer, Schauspieler
+	</aside>
+</section>
+<section>
+	<h1>Auswertung</h1>
+	<ul>
+		<li>"Strong suit" (Hauptfarbe) <span class="checked" /></li>
+		<li>"Opposite suit" (Seltenste Farbe) <span class="checked fragment fade-in" /></li>
+		<li>"Unproduktive" Eigenschaften (2-4) <span class="checked fragment fade-in" /></li>
+		<li class="fragment highlight-red">Rechte / linke Gehirnhälfte (rot / schwarz)</li>
+		<li>Introvertiert / Extravertiert (5-9 / 10-As)</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1 class="poker black">R / L</h1>
+	<img src="img/c/rl_dot.png" />
+	<ul>
+		<li>Linkshirnig: Dot thinking (schwarz)</li>
+		<li style="visibility:hidden">Rechtshirnig: Line thinking (rot)</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section data-transition="none">
+	<h1 class="poker black">R / L</h1>
+	<img src="img/c/rl_line.png" />
+	<ul>
+		<li>Linkshirnig: Dot thinking (schwarz)</li>
+		<li>Rechtshirnig: Line thinking (rot)</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1>Auswertung</h1>
+	<ul>
+		<li>"Strong suit" (Hauptfarbe) <span class="checked" /></li>
+		<li>"Opposite suit" (Seltenste Farbe) <span class="checked" /></li>
+		<li>"Unproduktive" Eigenschaften (2-4) <span class="checked" /></li>
+		<li>Rechte / linke Gehirnhälfte (rot / schwarz) <span class="checked" /></li>
+		<li class="fragment highlight-red">Introvertiert / Extravertiert (5-9 / 10-As)</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1 class="poker black">5-9</h1>
+	<ul>
+		<li>Introversion (nicht: schüchtern)</li>
+		<li>Allein oder kleine Gruppen</li>
+		<li>Tiefe</li>
+		<li>Kontrolle</li>
+		<li>Denken</li>
+		<li>Konzentration</li>
+		<li>Ganzheitlich</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1 class="poker black">10-As</h1>
+	<ul>
+		<li>Extraversion</li>
+		<li>Große Gruppen</li>
+		<li>Vielfalt</li>
+		<li>Risiko</li>
+		<li>Handeln</li>
+		<li>Multitasking</li>
+		<li>Problemlösen</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1>Auswertung</h1>
+	<ul>
+		<li>"Strong suit" (Hauptfarbe) <span class="checked" /></li>
+		<li>"Opposite suit" (Seltenste Farbe) <span class="checked" /></li>
+		<li>"Unproduktive" Eigenschaften (2-4) <span class="checked" /></li>
+		<li>Introvertiert / Extravertiert (5-9 / 10-As) <span class="checked" /></li>
+		<li>Rechte / linke Gehirnhälfte (rot / schwarz) <span class="checked" /></li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/c/1.PNG" height="700px">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1>Omnisophie Poker<span data-fragment-index="2" class="fragment fade-in">?</span></h1>
+	<ul class="fragment fade-in">
+		<li>Thinker &rarr; wahr</li>
+		<li>Builder &rarr; richtig</li>
+		<li>Influencer, Director &rarr; natürlich</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+-->
+<section>
+	<h1>Diversität macht Sinn</h1>
+<p>aka "The Person You Like the Least is the Person You Need the Most"</p>
+	<aside class="notes">
+	</aside>
+</section>
+<!--
+<section>
+	<img src="img/c/2.PNG" height="700px">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/c/5.PNG">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/c/6.PNG">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/c/7.PNG">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/c/8.PNG">
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<img src="img/c/9.PNG">
+	<aside class="notes">
+	</aside>
+</section>
+-->
+<section>
+	<h1>Der Mensch in artgerechter Haltung</h1>
+	<ol>
+		<li>Es gibt verschiedene Menschenarten <span class="checked" /></li>
+		<li>Diversität macht Sinn <span class="checked" /></li>
+		<li><span class="fragment highlight-red" data-fragment-index="4">Wie werde ich der Art eines Menschen gerecht?</span></li>
+	</ol>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1>Pseudosinn, und wie Empathie ihm entgegenwirkt</h1>
+	<aside class="notes">
+  Danach Artgerechtheit
+	</aside>
+</section>
+<section>
+	<img src="img/d/perle.jpg" width="100%">
+	<aside class="notes">
+		1. Wie entsteht eine Perle? Erklären. Dauert Jahre<br />
+		2. Perlenzucht: Gewaltsames Einpflanzen eines Sandkorns, Abschöpfen der Perlen<br>
+	</aside>
+</section>
+<section>
+	<h1>Stresskurve</h1>
+	<img src="img/b/stresskurve1.png" width="100%">
+	<aside class="notes">
+    Man verwundet die Muschel bewusst und setzt sie unter Stress (Stresskurve!)<br>
+    Nicht artgerecht!!!<br>
+		20% sterben, 30% stossen Eindringling aus, 20% wertlose Perlen, 30% ordentliche Perlen, nur 2% richtig gute<br>
+    3. Menschenzucht: Bewusst unter Stress setzen und Arbeitsergebnisse abschöpfen<br>
+		20% krank, 30% kündigen innerlich, 20% wertlose Perlen, 30% ordentliche Perlen, nur 2% richtig gute<br>
+Wir wollen bessere Ausbeute!
+	</aside>
+</section>
+<section>
+	<h1>Pseudosinn</h1>
+  Eine übertriebene Strategie zur Stressbewältigung 
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+  Drei Softwareentwickler im Büro. A und B arbeiten, C kommt zu spät.
+	<div class="speech-bubble left person b">C! Du hast den Build kaputtgemacht!</div>
+	<div class="speech-bubble right person c">Nichts Wildes...erst mal Kaffee.</div>
+	<div class="speech-bubble left person a">Könnt ihr bitte leiser sein...</div>
+	<aside class="notes">
+Welchen Stress haben die drei?
+	</aside>
+</section>
+<section>
+	<h1>9 Typen des Enneagramms</h1>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+				<th>Pseudosinn</th>
+			</tr>
+		</thead>	
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Perfektionisten</td>
+				<td>Perfektion</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Geber</td>
+				<td>Dank</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Macher</td>
+				<td>Macht</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Romantiker</td>
+				<td>Sinn</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Denker</td>
+				<td>Allwissen</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Skeptische</td>
+				<td>Autorität</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Genießer</td>
+				<td>Lust</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Anführer</td>
+        <td>Erfolg</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Friedliebende</td>
+        <td>Harmonie</td>
+			</tr>
+		</tbody>
+	</table>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+  <p>Abwärtsspirale: Die Stresskurven werden immer enger!</p>
+	<div class="speech-bubble left person b">Nur noch Perfektion</div>
+	<div class="speech-bubble right person c">Nur noch Lust</div>
+	<div class="speech-bubble left person a">Nur noch Harmonie</div>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h2>Mit Empathie Pseudosinn entgegenwirken</h2>
+  <p style="font-style:italic"> Empathie ist die Fähigkeit, Gedanken, Emotionen, Absichten und Persönlichkeitsmerkmale eines anderen Menschen zu erkennen und zu verstehen.</p>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+  <h1><a href="http://agilitrix.com/2013/01/how-to-express-empathy-avoid-the-traps" target="_blank">Empathy traps</a></h1>
+  <p>von Michael Sahota</p>	
+  <div class="fragment fade-in">
+	<h1>⚖</h1>
+	<p><s>Vergleichen</s></p>
+	</div>
+	<div class="fragment fade-in">
+	<h1>☀</h1>
+	<p><s>Aufmuntern</s></p>
+	<div class="fragment fade-in">
+	<h1>?</h1>
+	<p><s>Problem lösen</s></p>
+	</div>
+	<aside class="notes">
+		Hunde gestorben<br>
+		Mutter gestorben<br>
+		Musst nicht mehr früh aufstehen zum Gassi<br>
+		Kauf dir nen neuen Hund<br>
+    Beobachter installieren
+	</aside>
+</section>
+<section>
+  <h1><a href="http://agilitrix.com/2013/01/how-to-express-empathy-avoid-the-traps" target="_blank">Four elements of empathy</a></h1>
+  <p>-- von Michael Sahota</p>	
+	<ol>
+		<li>Perspektive wechseln</li>
+		<li class="fragment fade-in">Annehmen</li>
+		<li class="fragment fade-in">Empfinden</li>
+	</ol>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h2>"Empathy means being open to feeling emotions we may not want to feel"</h2>
+	<p>Sara Wachter-Boettcher</p>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+  <h1><a href="http://agilitrix.com/2013/01/how-to-express-empathy-avoid-the-traps" target="_blank">Four elements of empathy</a></h1>
+	<ol>
+		<li>Perspektive wechseln</li>
+		<li>Annehmen</li>
+		<li>Empfinden</li>
+		<li class="fragment fade-in">Verständnis ausdrücken</li>
+	</ol>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h2>Mit Empathie Pseudosinn entgegenwirken</h2>
+  <ul>
+  <li>Pseudosinn schmälert die Stresskurve <br>= weniger Leistung</li>
+  <li>Empathie verbreitert die Stresskurve <br>= mehr Leistung</li>
+  </ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+  <p>Drei Softwareentwickler im Büro. A und B arbeiten, C kommt zu spät.</p>
+  <p class="fragment fade-in">Den kaputten Build hat B repariert.</p>
+  <p class="fragment fade-in">  <img src="img/d/3kurven_2erl.png" width="100%"/>
+</p>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1>Artgerechtheit</h1>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h2>Natürlicher Mensch</h2>
+	<ul>
+		<li>Instinkt!</li>
+		<li>Braucht Vorbilder, keine Regeln</li>
+		<li>Hoher Energielevel, Dynamik, anfeuern</li>
+		<li>Herausforderungen überwinden lassen, Toleranzen</li>
+		<li>Gute Tools</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h2>Richtiger Mensch</h2>
+	<ul>
+		<li>Verstand!</li>
+		<li>Sicheren Platz im System finden</li>
+		<li>Nicht überkonditionieren, </li>
+		<li>Fehler verzeihen, Ängste nehmen</li>
+		<li>Würde, Lob, Status</li>
+	</ul>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h2>Wahrer Mensch</h2>
+	<ul>
+		<li>Intuition!</li>
+		<li>Verstehen, nicht loben</li>
+		<li>Inspiration durch Mentor</li>
+		<li>Wichtige Aufgaben, kein Multitasking</li>
+		<li>Geduld</li>
+	</ul>
+	<aside class="notes">
+nicht sagen man habe keine Ahnung!!<br>
+Schulen der Inspiration<br>
+Kein Wissen, sondern Zusammenhänge<br>
+Peak spät im Leben
+	</aside>
+</section>
+<section>
+	<h1>9 Typen des Enneagramms</h1>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+        <th>artgerecht</th>
+			</tr>
+		</thead>	
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Perfektionisten</td>
+        <td>Vorbild</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Geber</td>
+        <td>Versorger</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Macher</td>
+        <td>Großherziger Führer</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Romantiker</td>
+        <td>Quell der Liebe</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Denker</td>
+        <td>Quell der Weisheit</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Skeptische</td>
+        <td>Bewahrer der Ordnung</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Genießer</td>
+        <td>Quell der Freude</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Anführer</td>
+        <td>Quell der Initiative</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Friedliebende</td>
+        <td>Quell des Friedens</td>
+			</tr>
+		</tbody>
+	</table>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1>Der Mensch in artgerechter Haltung</h1>
+	<ol>
+		<li>Es gibt verschiedene Menschenarten <span class="checked" /></li>
+		<li>Diversität macht Sinn <span class="checked" /></li>
+		<li>Wie werde ich der Art eines Menschen gerecht? <span class="checked" /></li>
+	</ol>
+	<aside class="notes">
+Menschenarten<br>
+- Stresskurven<br>
+- Wahre, richtige, natürlich Menschen (Omnisophie)<br>
+- Selbsttest mit Enneagramm, Zusammenhang zu Enneagramm<br>
+Diversität<br>
+- Warum braucht man alle? Personality Poker<br>
+Artgerecht<br>
+- Stress erzeugt Pseudosinn<br>
+- Empathie wirkt Pseudosinn entgegen<br>
+- Artgerecht<br>
+	</aside>
+</section>
+<section>
+	<h2>The only thing you can change</h2>
+	<p><img src="img/d/mnmlist.png" width="400px"></p>
+http://mnmlist.com/small-changes/
+	<aside class="notes">
+	</aside>
+</section>
+
+
+<section>
+	<p>You can’t change your entire life.</p>
+	<p class="fragment fade-in">You can only change your next action.</p>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<p>You can’t change a relationship.</p>
+	<p class="fragment fade-in">You can only change your next interaction.</p>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<p>You can’t change the past, or control the future.</p>
+	<p class="fragment fade-in">You can only change what you’re doing right now.</p>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<p>You can’t change everything.</p>
+	<p class="fragment fade-in">You can only change one, small thing. *</p>
+	<br><br>
+	<p class="fragment fade-in">* And that’s all it takes</p>
+	<aside class="notes">
+	</aside>
+</section>
+<section>
+	<h1>Der Mensch in artgerechter Haltung</h1>
+	<p>FrOSCon, August 2013</p>
+	<p>Christoph Baudson</p>
+	<p><a href="https://twitter.com/sustainablepace" target="_blank">@sustainablepace</a></p>
+	<p><a href="http://artgerecht.sustainablepace.net" target="_blank">artgerecht.sustainablepace.net</a></p> 
+	<aside class="notes">
+	Vorstellen<br>
+	Moderator BonnAgile, Suchen Vorträge und Locations<br>
+	Twitter<br>
+	Softwareentwickler, JavaScript PHP, SolarWorld<br>
+	</aside>
+</section>
+</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
